@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d173e907f.js" crossorigin="anonymous"></script>
+    <link href="./css/style.css" rel="stylesheet">
+    <title>My Dashboard</title>
+</head>
+<body>
+    <section class="container">
+        <aside class="main-navbar">
+            <ul class="main-navbar-iconList ul-top">
+                <li class="main-navbar-iconList--icon">
+                    <a class="icon main-navbar-iconList--link">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+                <li class="main-navbar-iconList--icon">
+                    <a class="icon main-navbar-iconList--link">
+                        <i class="fa-solid fa-address-card"></i>
+                    </a>
+                </li>
+                <li class="main-navbar-iconList--icon">
+                    <a class="icon main-navbar-iconList--link">
+                        <i class="fa-solid fa-list-check"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="main-navbar-iconList ul-bottom">
+                <li class="main-navbar-iconList--icon">
+                    <a class="icon main-navbar-iconList--link">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="body">
+            <nav class="nav">
+                <div class="nav--header">
+                    <a class="icon back"href="">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <h3 class="heading">My Dashboard</h3>
+                </div>
+                <div class="nav--icons">
+                    <ul class="icon-list">
+                        <li class="icon-list--item hide">
+                            <a class="icon-list-link" href="">
+                                <i class="fa-solid fa-arrow-rotate-left"></i>
+                            </a>
+                        </li>
+                        <li class="icon-list--item hide">
+                            <a class="icon-list-link">
+                                <i class="fa-solid fa-arrow-rotate-right"></i>                   
+                            </a>
+                        </li>
+                        <li class="icon-list--item hide">
+                            <a class="icon-list-link" id="discard" href="">
+                                Discard Changes
+                            </a>
+                        </li>
+                        <li class="icon-list--item hide">
+                            <a class="icon-list-link" id="save" href="">
+                                Save
+                            </a>
+                        </li>
+                        <li class="icon-list--item">
+                            <a class="icon icon-list-link main-hamburger" href="">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="content-container">
+                <div class="content">
+                    <div class="content--card">
+                        <div class="content--card__header">
+                            <h3 class="heading">Filters</h3>
+                            <a class="icon content-card__hamburger">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                        </div>
+                        <div class="content-card__body">
+            
+                        </div>
+                    </div>
+                    <div class="content--card">
+                        <div class="content--card__header">
+                            <h3 class="heading">Inventory by Channel</h3>
+                            <a class="icon content-card__hamburger">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                        </div>
+                        <div class="content-card__body">
+                            
+                        </div>
+                    </div>
+                    <div class="content--card">
+                        <div class="content--card__header">
+                            <h3 class="heading">Inventory Path</h3>
+                            <a class="icon content-card__hamburger">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                        </div>
+                        <div class="content-card__body">
+                            
+                        </div>
+                    </div>
+                    <div class="content--card">
+                        <div class="content--card__header">
+                            <h3 class="heading">Inventory by SKU</h3>
+                            <a class="icon content-card__hamburger">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                        </div>
+                        <div class="content-card__body">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="side-nav disappear">
+                    <p class="side-nav__header">Components</p>
+                    <div class="component-lane">
+                        <div class="draggable-card" draggable="true">
+                            <p>Tabs</p>
+                        </div>
+                        <div class="draggable-card" draggable="true">
+                            <p>Process Diagram</p>
+                        </div>
+                        <div class="draggable-card" draggable="true">
+                            <p>Table</p>
+                        </div>
+                        <div class="draggable-card" draggable="true">
+                            <p>Markdown</p>
+                        </div>
+                        <div class="draggable-card" draggable="true">
+                            <p>Divider</p>
+                        </div>
+                        <div class="draggable-card" draggable="true">
+                            <p>Column</p>
+                        </div>
+                        <div class="draggable-card" draggable="true">
+                            <p>Row</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="./js/toggle.js"></script>
+    <script src="./js/drag.js"></script>
+</body>
+</html>
